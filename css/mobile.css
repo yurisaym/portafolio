@@ -1,202 +1,26 @@
-/* utility classes */
-.display-1 {
-  font-size: 4rem;
+/* ==============================
+   RESPONSIVO
+============================== */
+@media (max-width: 980px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-/* Navbar*/
-.navbar-home {
-  height: 10%;
-}
-
-/*cabecalho */
-#cabecalho {
-  height: 100%;
-  padding: 50px 0 20px 0;
-}
-
-.cabecalho-linha {
-   flex-wrap: wrap;
-}
-
-.cabecalho-linha-titulo {
-  width: 100%;
-  padding-top: 0px;
-  padding-top: 20px;
-  text-align: center;
-}
-
-/*sobre mim */
-#sobremim-1 {
-  padding: 50px 0;
-  text-align: center;
-}
-
-.sobre-mim h2 {
-  padding-bottom: 50px;
-}
-
-.sobre-mim-linha {
-   flex-wrap: wrap;
-}
-
-.sobre-mim-linha-imagem {
-  height: auto;
-  width: 100%;
-  padding-right: 10px;
-  padding-bottom: 30px;
-
-}
-
-#sobremim-1 hr {
-  width: 100%;
-  margin-bottom: 30px;
-}
-
-/*  skills*/
-
-#skills {
-  padding: 50px 0;
-  text-align: center;
-}
-
-#skills h2 {
-  padding-bottom: 30px;
-}
-
-/*.skills-linha{
-  display: flex;
-  padding-bottom: 50px;
-}*/
-
-.skills-linha-esquerda-texto,
-.skills-linha-dereita-texto {
-  width: 50%;
-  display: flex;
-}
-.skills-linha-esquerda-imagem {
-  width: 20%;
-  text-align: right;
-  padding-right: 50px;
-}
-
-.skills-linha-dereita-imagem {
-  width: 50%;
-  text-align: right;
-  padding-left: 50px;
-}
-
-.skills-linha-esquerda-imagem img,
-.skills-linha-dereita-imagem img {                                                                      
-  
-  height: 100px;
-}
-.skills-linha-esquerda-texto h4,
-.skills-linha-dereito-texto h4{
-   font-size: 15px;
-}
-
-/* cursos */
-
-#Cursos-1 {
-  padding: 90px 0;
-  background:rgba(221, 216, 216, 0.467);
-}
-
-#cursos h2 {
-  padding-bottom: 20px;
-}
-
-.curso-linha {
-  display: flex;
-  padding-bottom: 40px;
-}
-
-.curso-linha-tag {
-  width: 50%;
-  text-align: right;
-  padding-right: 80px;
-}
-
-.curso-linha-tag p span {
-  background: #c4c4c4;
-  color: #fff;
-  padding: 12px 30px;
-  border-radius: 20px;
-}
-/*portafolio */
-
-#portafolio {
-   padding: 90px 0;
-   background: #eee8e84f;
-}
-
-#portafolio h2 {
-  padding-bottom: 50px;
-}
-
-.portafolio-linha {
-   display: flex;
-}
-
-.portafolio-linha-caixa {
-   margin: 20px;
-   background: #fff;
-   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-
-}
-
-.portafolio-linha-caixa p{
-     text-align: center;
-     padding: 20px;
-     margin-top: 0;
-}
-
-.portafolio-linha-caixa img{
-  width: 100%;
-  
-}
-/* meu footer */
-.footer-home {
-  height: 10%;
-}
-
-
-.copyright{
-  text-align: center;
-}
-/*contato*/
-
-#contato {
-  padding: 90px 0;
-  background: #ece5e54f;
-}
-
-.contato-form {
-   padding: 90px 0;
-   background: #f9f7f7;
-
-}
-
-#contato h2 {
-  padding: 50px;
-}
-
-.contato-form {
-  background: #fff;
-  width: 50%;
-  margin: 20px auto;
-  padding: 70px 50px;
-  border-radius: 20px;
-  box-shadow: 16px 16px 16px rgb(194, 192, 182);
-}
-
-.contato-form h5 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-weight: 900;
-
-}
-
-.contato-form button {
-  width: 100%;
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }

@@ -1,162 +1,162 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" media="screen and (max-width:768px)" href="./css/mobile.css">
-    <title>Sobre mim</title>
+    <title>Sobre mim — Yurisay Martinez</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
-    <header id="mainheder">
-      <nav id="navbar" class="nav-home">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand">
+          <img
+            src="./img/Diseño sin título (1).png"
+            alt="Logo Yurisay"
+            class="logo"
+          />
+        </a>
+
+        <button
+          class="nav-toggle"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          id="navToggle"
+        >
+          <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M3 6h18M3 12h18M3 18h18"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+
+        <nav id="primary-navigation" class="primary-nav">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li>
+              <a href="sobre-mim.html" class="nav-link current">Sobre mim</a>
+            </li>
+            <li>
+              <a href="projeto-portafolio.html" class="nav-link">Projetos</a>
+            </li>
+            <li><a href="contato.html" class="nav-link">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- SOBRE MIM -->
+      <section class="about-section container">
+        <div class="about-grid">
+          <div class="about-photo">
+            <img
+              src="./img/Diseño sin título (1).png"
+              alt="Foto de Yurisay Martinez"
+              class="about-img"
+            />
+          </div>
+
+          <div class="about-content">
+            <h1 class="section-title">Sobre mim</h1>
+
+            <p>
+              Olá! Meu nome é <strong>Yurisay Martinez</strong>, sou uma
+              desenvolvedora Front-End em formação, apaixonada por criar
+              interfaces intuitivas, modernas e responsivas.
+            </p>
+
+            <p>
+              Estou constantemente estudando HTML, CSS e JavaScript, além de
+              explorar UX/UI Design, acessibilidade e boas práticas para criação
+              de produtos digitais.
+            </p>
+
+            <p>
+              Meu objetivo é evoluir como profissional, construindo soluções
+              funcionais que facilitem a vida das pessoas e oferecendo
+              experiências agradáveis para todos os usuários.
+            </p>
+
+            <a href="projeto-portafolio.html" class="btn btn-primary"
+              >Ver meus projetos</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="skills-section">
         <div class="container">
-          <a href="./index.html"
-            ><img
-              class="logo"
-              src="./img/inicio-1-portafolio-img.png"
-              height="50px"
-          /></a>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a class="current" href="sobre-mim.html">Sobre mim</a></li>
-            <li><a href="projeto-portafolio.html">Projetos/Portafolio</a></li>
-            <li><a href="contato.html">Contato</a></li>
+          <h2 class="section-title">Habilidades</h2>
+
+          <div class="skills-grid">
+            <div class="skill-card">
+              <img src="./img/icon-html.png" alt="HTML logo" />
+              <h3>HTML5</h3>
+              <p>Estruturação semântica, acessibilidade e boas práticas.</p>
+            </div>
+
+            <div class="skill-card">
+              <img src="./img/icon-css.png" alt="CSS logo" />
+              <h3>CSS3</h3>
+              <p>Responsividade, Flexbox, Grid e design moderno.</p>
+            </div>
+
+            <div class="skill-card">
+              <img src="./img/icon-js.png" alt="JavaScript logo" />
+              <h3>JavaScript</h3>
+              <p>Lógica de programação, DOM e interatividade.</p>
+            </div>
+
+            <div class="skill-card">
+              <img src="./img/figma.png" alt="Figma logo" />
+              <h3>Figma</h3>
+              <p>Protótipos, UI Design e criação de layouts organizados.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORMAÇÃO / CURSOS -->
+      <section class="courses-section">
+        <div class="container">
+          <h2 class="section-title">Formação e cursos</h2>
+
+          <ul class="courses-list">
+            <li><strong>HTML5 & CSS3</strong> — Curso em Vídeo</li>
+            <li><strong>JavaScript</strong> — Curso em Vídeo</li>
+            <li>
+              <strong>UI/UX Design</strong> — Figma, prototipagem e práticas de
+              design
+            </li>
+            <li><strong>Lógica de Programação</strong></li>
           </ul>
         </div>
-      </nav>
-    </header>
-    <div id="sobremim-1">
-      <div id="container">
-        <h2 class="sobre-mim">Sobre mim</h2>
-        <div class="sobre-mim-linha">
-          <div class="sobre-mim-linha-imagem">
-            <img src="./img/sobre-mi.png" alt=""  width="620"/>
-          </div>
-          <div class="sobre-mim-linha-texto">
-            <h4>Yurisay Martinez</h4>
-            <p class="sobre-mim-descricao">Front-end Developer em formação</p>
-            <hr />
-            <p>Olá, tenho 36 anos sou da Venezuela, cheguei ao Rio de Janeiro há 4 anos, sou uma pessoa curiosa, apaixonada, criativa, feliz. gosto de sair e explorar a natureza, ler, escrever, ouvir música, asistir filmes y series. o que  mais gosto é correr.
-            </p>
-            <p>
-              Atualmente cursando desenvolvimento web front-end, no TOTI. Procuro me consolidar em uma empresa que me dê a oportunidade de atingir meus objetivos, crescer como desenvolvedor web aprendendo cada dia mais.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
-    <div id="skills">
-      <div class="container">
-        <h2>Skills</h2>
-        <div class="skills-linha">
-          <div class="skills-linha-esquerda">
-            <div class="skills-linha-esquerda-imagem">
-              <img src="./img/icon-html.png" alt=""/>
-            </div>
-            <div class="skills-linha-esquerda-texto">
-              <h4>HTML</h4>
-            </div>
-          </div>
-          <div class="skills-linha-dereita">
-            <div class="skills-linha-dereita-imagem">
-              <img src="./img/icon-sass.png" alt="">
-            </div>
-            <div class="skills-linha-dereita-texto">
-              <h4>SASS</h4>
-            </div>
-          </div>
-        </div>
-        <div class="skills-linha">
-          <div class="skills-linha-esquerda">
-            <div class="skills-linha-esquerda-imagem">
-              <img src="./img/icon-css.png" alt=""/>
-            </div>
-            <div class="skills-linha-esquerda-texto">
-              <h4>CSS</h4>
-            </div>
-          </div>
-          <div class="skills-linha-dereita">
-            <div class="skills-linha-dereita-imagem">
-              <img src="./img/descarga.png" alt="">
-            </div>
-            <div class="skills-linha-dereita-texto">
-              <h4>PHOTOSHOP</h4>
-            </div>
-          </div>
-        </div>
-        <div class="skills-linha">
-          <div class="skills-linha-esquerda">
-            <div class="skills-linha-esquerda-imagem">
-              <img src="./img/icon-js.png" alt="" />
-            </div>
-            <div class="skills-linha-esquerda-texto">
-              <h4>JAVASCRIPT</h4>
-            </div>
-          </div>
-          <div class="skills-linha-dereita">
-            <div class="skills-linha-dereita-imagem">
-              <img src="" alt="">
-            </div>
-            <div class="skills-linha-dereita-texto">
-              <h4>SASS</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-        <div id="Cursos-1">
-      <div class="container">
-        <h2>Cursos</h2>
-        <div class="curso-linha">
-          <div class="curso-linha-tag">
-            <p><span>2022</span></p>
-          </div>
-          <div class="curso-linha-texto">
-            <h4>TOTI</h4>
-            <p>Programação Front-end</p>
-          </div>
-        </div>
-        <div class="curso-linha">
-          <div class="curso-linha-tag">
-            <p><span>2022</span></p>
-          </div>
-          <div class="curso-linha-texto">
-            <h4>Movimento bandeirantes</h4>
-            <p>Aux. Administrarivo</p>
-          </div>
-        </div>
-        <div class="curso-linha">
-          <div class="curso-linha-tag">
-            <p><span>2022</span></p>
-          </div>
-          <div class="curso-linha-texto">
-            <h4>DDQ-Ensinos</h4>
-            <p>Designer</p>
-          </div>
-        </div>
-        <div class="curso-linha">
-          <div class="curso-linha-tag">
-            <p><span>2022</span></p>
-          </div>
-          <div class="curso-linha-texto">
-            <h4>SEBRAE</h4>
-            <p>Marketing Digital</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer id="meufooter">
-      <div class="footer-home">
-        <a href="https://www.instagram.com/yurisay_13/" target="_blank" >
-          <img src="./img/instagram.png" height="40px" alt=""
-        /></a>
-        <p class="copyright">&copy; Yurisay Martinez- 2022</p>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Yurisay Martinez</p>
+        <nav>
+          <a href="https://github.com/yurisaym" target="_blank">GitHub</a>
+          <a
+            href="https://www.linkedin.com/in/yurisay-m-45aa41215/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </nav>
       </div>
     </footer>
+    <script src="/index.js"></script>
   </body>
 </html>

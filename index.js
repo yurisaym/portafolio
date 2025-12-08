@@ -1,20 +1,50 @@
-const nome = document.getElementById("nome")
-const email = document.getElementById("email")
-const mensagem = document.getElementById("mensagem")
-const form = document.getElementById("form")
-const parrafo = document.getElementById("warnings") 
+const navToggle = document.getElementById('navToggle')
+const nav = document.getElementById('primary-navigation')
 
-form.addEventListener("submit", e=>{
-  e.preventDefault()
-  let warnings = ""
-  let regexEmail = /^\w+([\.-]?\w=)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
-  if(nome.value.length < 5){
-    warnings += 'o nome não é valido <br>'  
-  }
-  console.log(regexEmail.test(email.value))
-  if(!regexEmail.test(email.value)){
-    warnings += 'o email não é valido <br>'
+if (navToggle && nav) {
+  navToggle.addEventListener('click', () => {
+    const expanded = navToggle.getAttribute('aria-expanded') === 'true'
+    navToggle.setAttribute('aria-expanded', !expanded)
+    nav.classList.toggle('open')
+  })
+}
 
-  }
-})
+const form = document.querySelector('.contact-form')
 
+if (form) {
+  form.addEventListener('submit', function (e) {
+    e.preventDefault()
+
+    const nome = document.getElementById('nome').value.trim()
+    const email = document.getElementById('email').value.trim()
+    const mensagem = document.getElementById('mensagem').value.trim()
+
+    let errors = []
+
+    if (nome.length < 3) {
+      errors.push('O nome precisa ter pelo menos 3 caracteres.')
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (!emailRegex.test(email)) {
+      errors.push('O email não é válido.')
+    }
+
+    if (mensagem.length < 10) {
+      errors.push('A mensagem precisa ter pelo menos 10 caracteres.')
+    }
+
+    if (errors.length > 0) {
+      alert(errors.join('\n'))
+      return
+    }
+
+    alert('Mensagem enviada com sucesso! Obrigada.')
+    form.reset()
+  })
+}
+
+const yearSpan = document.getElementById('year')
+if (yearSpan) {
+  yearSpan.textContent = new Date().getFullYear()
+}

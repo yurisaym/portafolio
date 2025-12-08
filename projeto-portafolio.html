@@ -1,66 +1,207 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" media="screen and (max-width:768px)" href="./css/mobile.css">
-  <title>Projetos</title>
-</head>
-<body>
-  <header id="mainheder">
-    <nav id="navbar" class="nav-home">
-      <div class="container">
-            <a href="./index.html"><img class="logo" src="./img/inicio-1-portafolio-img.png" height="50px"></a>
-            <ul>
-              <li><a href="index.html">Home</a></li> 
-              <li><a href="sobre-mim.html">Sobre mim</a></li>
-              <li><a  class="current" href="projeto-portafolio.html">Projetos/Portafolio</a></li>
-              <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </div>
-    </nav>
-</header>
-     <div id="portafolio">
-      <div class="container">
-        <h2>Portafolio/projetos</h2>
-        <div class="portafolio-linha">
-          <div class="portafolio-linha-caixa">
-            <img src="./img/juego del ahorcado -1.png "alt=""  width="400px">
-            <p>Projeto 1</p>
-          </div>
-          <div class="portafolio-linha-caixa">
-            <img src="./img/ahorcado 2.png" alt=""  width="400px">
-            <p>Projeto 2</p>
-          </div>
-          <div class="portafolio-linha-caixa">
-            <img src="./img/ahorcado 2.png" alt="" width="400px" >
-            <p>Projeto 3</p>
-          </div>
-        </div>
-        <div class="portafolio-linha">
-          <div class="portafolio-linha-caixa">
-            <img src="./img/ahorcado 2.png" alt="" width="400px" >
-            <p>Projeto 4</p>
-          </div>
-          <div class="portafolio-linha-caixa">
-            <img src="./img/ahorcado 2.png" alt="" width="400px" >
-            <p>Projeto 5</p>
-          </div>
-          <div class="portafolio-linha-caixa">
-            <img src="./img/ahorcado 2.png" alt="" width="400px" >
-            <p>Projeto 6</p>
-          </div>
-        </div>
-      </div>
-     </div>
-<footer id="meufooter">
-   <div class="footer-home">
-    <a href="https://github.com/yurisaym" target="_blank" ><img src="./img/github.png" alt="" height="50px"></a>
-   </div>
-  <p>&copy; Yurisay Martinez - 2022</p>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projetos — Yurisay Martinez</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-</footer>
-</body>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand">
+          <img
+            src="./img/Diseño sin título (1).png"
+            alt="Logo Yurisay"
+            class="logo"
+          />
+        </a>
+
+        <button
+          class="nav-toggle"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          id="navToggle"
+        >
+          <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M3 6h18M3 12h18M3 18h18"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+
+        <nav id="primary-navigation" class="primary-nav">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="sobre-mim.html" class="nav-link">Sobre mim</a></li>
+            <li>
+              <a href="projeto-portafolio.html" class="nav-link current"
+                >Projetos</a
+              >
+            </li>
+            <li><a href="contato.html" class="nav-link">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- TÍTULO -->
+      <section class="projects-header container">
+        <h1 class="section-title">Projetos</h1>
+        <p class="projects-description">
+          Aqui você encontra alguns dos meus projetos desenvolvidos com HTML,
+          CSS e JavaScript. Todos focam em boas práticas, responsividade e
+          design intuitivo.
+        </p>
+      </section>
+
+      <!-- GRID DE PROJETOS -->
+      <section class="projects-section">
+        <div class="container">
+          <div class="projects-grid">
+            <!-- PROJETO 1 -->
+            <div class="project-card">
+              <img src="./img/projeto-toti-rs.png" alt="Imagem do projeto 1" />
+              <div class="project-info">
+                <h3>Toters do Bem SOS RS projeto Colaborativo</h3>
+                <p>
+                  O projeto Toters do Bem é uma plataforma que conecta
+                  voluntários e instituições com o objetivo de fortalecer o Rio
+                  Grande do Sul. Ele busca oferecer ajuda prática e apoio às
+                  pessoas afetadas pelas enchentes no estado, disponibilizando
+                  serviços de psicólogos e educadores sociais.
+                </p>
+
+                <div class="project-links">
+                  <a
+                    href="https://projeto-toti-2.vercel.app/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Ver projeto</a
+                  >
+                  <a
+                    href="https://github.com/Dart1516/projeto-toti-2"
+                    target="_blank"
+                    class="btn btn-ghost"
+                    >Código</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- PROJETO 2 -->
+            <div class="project-card">
+              <img src="./img/animeflix.png" alt="Imagem do projeto 2" />
+              <div class="project-info">
+                <h3>Animeflix projeto Colaborativo</h3>
+                <p>
+                  Consumindo una API abierta con usabilidad y accesibilidad.
+                  Atingindo a problemático de aprendizado das cores em inglés de
+                  uma forma diferente y chamativa, é utilizado o reconhecimento
+                  das imágenes para dito aprendizado.
+                </p>
+
+                <div class="project-links">
+                  <a
+                    href="https://colmenareshr.github.io/animeflix/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Ver projeto</a
+                  >
+                  <a href="#" target="_blank" class="btn btn-ghost">Código</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- PROJETO 3 -->
+            <div class="project-card">
+              <img src="./img/analista-dados.png" alt="Imagem do projeto 3" />
+              <div class="project-info">
+                <h3>Portfólio Colaborativo Comunidade Toti</h3>
+                <p>
+                  O Portfólio Colaborativo da Comunidade Toti é uma plataforma
+                  dinâmica e interativa, criada para celebrar a diversidade de
+                  talentos e experiências dos desenvolvedores. Nosso objetivo é
+                  construir um espaço inclusivo, onde todos possam compartilhar
+                  suas histórias, projetos e conquistas.
+                </p>
+
+                <div class="project-links">
+                  <a
+                    href="https://portfoliocomunidadetoti.vercel.app/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Ver projeto</a
+                  >
+                  <a
+                    href="https://github.com/nadiduno/portfolioComunidadeToti"
+                    target="_blank"
+                    class="btn btn-ghost"
+                    >Código</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- PROJETO 4 -->
+            <div class="project-card">
+              <img src="./img/somos-refugio.png" alt="Imagem do projeto 4" />
+              <div class="project-info">
+                <h3>Somos Refúgio</h3>
+                <p>
+                  O projeto Somos Refúgio nasce da necessidade de fornecer
+                  informações a refugiados e migrantes sobre centros de apoio e
+                  acolhimento. Funciona como um jornal digital, com a missão de
+                  oferecer informações práticas e acessíveis, facilitando a vida
+                  daqueles que chegam recentemente ao Brasil e precisam de
+                  orientações claras e simples.
+                </p>
+
+                <div class="project-links">
+                  <a
+                    href="https://yurisaym.github.io/somos-refugio/"
+                    target="_blank"
+                    class="btn btn-primary"
+                    >Ver projeto</a
+                  >
+                  <a
+                    href="https://github.com/yurisaym/somos-refugio.git"
+                    target="_blank"
+                    class="btn btn-ghost"
+                    >Código</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Yurisay Martinez</p>
+        <nav>
+          <a href="https://github.com/yurisaym" target="_blank">GitHub</a>
+          <a
+            href="https://www.linkedin.com/in/yurisay-m-45aa41215/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </nav>
+      </div>
+    </footer>
+    <script src="/index.js"></script>
+  </body>
 </html>
