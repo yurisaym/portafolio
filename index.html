@@ -1,161 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Yurisay Martinez — Front-end Developer</title>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yurisay Martinez — Front-end Developer</title>
+  <meta name="description" content="Portfólio de Yurisay Martinez — Front-end Developer em formação. Projetos em HTML, CSS e JavaScript." />
 
-    <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
-      rel="stylesheet"
-    />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
 
-    <meta
-      name="description"
-      content="Portfólio de Yurisay Martinez — Front-end Developer em formação. Projetos em HTML, CSS, JavaScript."
-    />
-  </head>
-  <body>
-    <header class="site-header" id="main-header">
-      <div class="container header-inner">
-        <a class="brand" href="index.html" aria-label="Ir para inicio">
-          <img
-            src="./img/Diseño sin título (1).png"
-            alt="Logo Yurisay"
-            class="logo"
-          />
-        </a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Ir para início">
+        <img src="./img/Diseño sin título (1).png" alt="Logo Yurisay Martinez" class="logo" />
+      </a>
 
-        <button
-          class="nav-toggle"
-          aria-controls="primary-navigation"
-          aria-expanded="false"
-          id="navToggle"
-        >
-          <span class="sr-only">Abrir menu</span>
+      <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" id="navToggle">
+        <span class="sr-only">Abrir menu</span>
+        <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
 
-          <svg
-            width="28"
-            height="28"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-            focusable="false"
-          >
-            <path
-              d="M3 6h18M3 12h18M3 18h18"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-          </svg>
-        </button>
+      <nav id="primary-navigation" class="primary-nav" role="navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link current" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="sobre-mim.html">Sobre mim</a></li>
+          <li><a class="nav-link" href="projeto-portafolio.html">Projetos</a></li>
+          <li><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <nav id="primary-navigation" class="primary-nav" role="navigation">
-          <ul class="nav-list">
-            <li><a class="nav-link current" href="index.html">Home</a></li>
-            <li><a class="nav-link" href="sobre-mim.html">Sobre mim</a></li>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 id="hero-title" class="hero-title">
+            <span class="highlight">Front-end</span><br />
+            Developer em formação
+          </h1>
+          <p class="hero-sub">
+            Crio interfaces limpas e responsivas com HTML, CSS e JavaScript — foco em usabilidade e acessibilidade.
+          </p>
+
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="projeto-portafolio.html">Ver projetos</a>
+            <a class="btn btn-ghost" href="sobre-mim.html">Sobre mim</a>
+          </div>
+
+          <ul class="hero-socials" aria-label="Redes sociais">
             <li>
-              <a class="nav-link" href="projeto-portafolio.html">Projetos</a>
+              <a href="https://www.linkedin.com/in/yurisay-m-45aa41215/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+                <img src="./img/linkdin.png" alt="Logo LinkedIn" />
+              </a>
             </li>
-            <li><a class="nav-link" href="contato.html">Contato</a></li>
+            <li>
+              <a href="https://github.com/yurisaym" target="_blank" rel="noopener noreferrer">
+                GitHub
+                <img src="./img/github.png" alt="Logo GitHub" />
+              </a>
+            </li>
+            <li>
+              <a href="https://api.whatsapp.com/message/HK7AAOSGVIXFB1" target="_blank" rel="noopener noreferrer">
+                WhatsApp
+                <img src="./img/whatsapp.png" alt="Logo WhatsApp" />
+              </a>
+            </li>
           </ul>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="container hero-grid">
-          <div class="hero-content">
-            <h1 id="hero-title" class="hero-title">
-              <span class="highlight">Front-end</span><br />
-              Developer em formação
-            </h1>
-            <p class="hero-sub">
-              Crio interfaces limpas e responsivas com HTML, CSS e JavaScript —
-              foco em usabilidade e acessibilidade.
-            </p>
-
-            <div class="hero-ctas">
-              <a class="btn btn-primary" href="projeto-portafolio.html"
-                >Ver projetos</a
-              >
-              <a class="btn btn-ghost" href="sobre-mim.html">Sobre mim</a>
-            </div>
-
-            <ul class="hero-socials" aria-label="Redes sociais">
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/yurisay-m-45aa41215/"
-                  target="_blank"
-                  rel="noopener"
-                  >LinkedIn
-                  <img
-                    src="./img/linkdin.png"
-                    alt="Logo LinkedIn"
-                    class="w-8 h-8"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/yurisaym" target="_blank" rel=""
-                  >GitHub
-                  <img
-                    src="./img/github.png"
-                    alt="Logo LinkedIn"
-                    class="w-8 h-8"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://api.whatsapp.com/message/HK7AAOSGVIXFB1"
-                  target="_blank"
-                  rel="noopener"
-                  >WhatsApp
-                  <img
-                    src="./img/whatsapp.png"
-                    alt="Logo LinkedIn"
-                    class="w-8 h-8"
-                /></a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="hero-visual" aria-hidden="true">
-            <img
-              src="./img/Diseño sin título (1).png"
-              alt=""
-              class="hero-image"
-            />
-          </div>
         </div>
-      </section>
-    </main>
 
-    <footer class="site-footer" role="contentinfo">
-      <div class="container footer-inner">
-        <p>
-          &copy; <span id="year"></span> Yurisay Martinez — Todos los derechos
-          reservados.
-        </p>
-        <nav aria-label="Enlaces de pie">
-          <a href="https://github.com/yurisaym" target="_blank" rel="noopener"
-            >GitHub</a
-          >
-          <a
-            href="https://www.linkedin.com/in/yurisay-m-45aa41215/"
-            target="_blank"
-            rel="noopener"
-            >LinkedIn</a
-          >
-        </nav>
+        <div class="hero-visual" aria-hidden="true">
+          <img src="./img/Diseño sin título (1).png" alt="Ilustração Front-end" class="hero-image" />
+        </div>
       </div>
-    </footer>
+    </section>
+  </main>
 
-    <script src="./index.js"></script>
-  </body>
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Yurisay Martinez — Todos os direitos reservados.</p>
+      <nav aria-label="Redes sociais">
+        <a href="https://github.com/yurisaym" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/yurisay-m-45aa41215/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
 </html>

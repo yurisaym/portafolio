@@ -4,106 +4,85 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato — Yurisay Martinez</title>
+  <meta name="description" content="Entre em contato com Yurisay Martinez para oportunidades, colaborações ou dúvidas." />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
-
 <body>
 
-<!-- HEADER -->
-<header class="site-header">
-  <div class="container header-inner">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="./img/Diseño sin título (1).png" alt="Logo Yurisay Martinez" class="logo">
+      </a>
 
-    <a href="index.html" class="brand">
-      <img src="./img/Diseño sin título (1).png" alt="Logo Yurisay" class="logo">
-    </a>
+      <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" id="navToggle">
+        <span class="sr-only">Abrir menu</span>
+        <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
 
-    <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" id="navToggle">
-      <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-      </svg>
-    </button>
-
-    <nav id="primary-navigation" class="primary-nav">
-      <ul class="nav-list">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="sobre-mim.html" class="nav-link">Sobre mim</a></li>
-        <li><a href="projeto-portafolio.html" class="nav-link">Projetos</a></li>
-        <li><a href="contato.html" class="nav-link current">Contato</a></li>
-      </ul>
-    </nav>
-
-  </div>
-</header>
-
-
-<main>
-
-  <!-- TÍTULO -->
-  <section class="contact-header container">
-    <h1 class="section-title">Entre em contato</h1>
-    <p class="contact-description">
-      Estou sempre aberta a novas oportunidades, colaborações ou dúvidas.  
-      Fique à vontade para enviar uma mensagem!
-    </p>
-  </section>
-
-  <!-- FORMULÁRIO -->
-  <section class="contact-section">
-    <div class="container">
-
-      <div class="contact-grid">
-
-        <!-- Info lateral -->
-        <div class="contact-info">
-          <h3>Minhas redes</h3>
-          <p>Você também pode falar comigo por aqui:</p>
-
-          <ul class="contact-list">
-            <li><a href="https://github.com/yurisaym" target="_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/yurisay-m-45aa41215/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://api.whatsapp.com/message/HK7AAOSGVIXFB1" target="_blank">WhatsApp</a></li>
-          </ul>
-
-          <img src="./img/gmail-sem.png" alt="Ilustração de contato" class="contact-img">
-        </div>
-
-        <!-- Form -->
-        <form class="contact-form" action="#" method="POST">
-
-          <label for="nome">Nome</label>
-          <input type="text" id="nome" name="nome" required placeholder="Seu nome">
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
-
-          <label for="mensagem">Mensagem</label>
-          <textarea id="mensagem" name="mensagem" rows="6" required placeholder="Como posso te ajudar?"></textarea>
-
-          <button type="submit" class="btn btn-primary contact-btn">Enviar mensagem</button>
-
-        </form>
-      </div>
-
+      <nav id="primary-navigation" class="primary-nav" role="navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="sobre-mim.html" class="nav-link">Sobre mim</a></li>
+          <li><a href="projeto-portafolio.html" class="nav-link">Projetos</a></li>
+          <li><a href="contato.html" class="nav-link current">Contato</a></li>
+        </ul>
+      </nav>
     </div>
-  </section>
+  </header>
 
-</main>
+  <main>
+    <section class="contact-header container">
+      <h1 class="section-title">Entre em contato</h1>
+      <p class="contact-description">Estou sempre aberta a novas oportunidades, colaborações ou dúvidas. Fique à vontade para enviar uma mensagem!</p>
+    </section>
 
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
 
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p>&copy; <span id="year"></span> Yurisay Martinez</p>
-    <nav>
-      <a href="https://github.com/yurisaym" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/yurisay-m-45aa41215/" target="_blank">LinkedIn</a>
-    </nav>
-  </div>
-</footer>
+          <div class="contact-info">
+            <h3>Minhas redes</h3>
+            <p>Você também pode falar comigo por aqui:</p>
+            <ul class="contact-list">
+              <li><a href="https://github.com/yurisaym" target="_blank">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/yurisay-m-45aa41215/" target="_blank">LinkedIn</a></li>
+              <li><a href="https://api.whatsapp.com/message/HK7AAOSGVIXFB1" target="_blank">WhatsApp</a></li>
+            </ul>
+            <img src="./img/gmail-sem.png" alt="Ilustração de contato" class="contact-img">
+          </div>
 
+          <form class="contact-form" action="#" method="POST">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required placeholder="Seu nome">
 
-<script src="./index.js"></script>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
 
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="6" required placeholder="Como posso te ajudar?"></textarea>
+
+            <button type="submit" class="btn btn-primary contact-btn">Enviar mensagem</button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Yurisay Martinez</p>
+      <nav>
+        <a href="https://github.com/yurisaym" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/yurisay-m-45aa41215/" target="_blank">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
 </body>
 </html>
