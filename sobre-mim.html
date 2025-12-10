@@ -4,20 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sobre mim — Yurisay Martinez</title>
+    <meta
+      name="description"
+      content="Conheça Yurisay Martinez, desenvolvedora Front-End em formação. Descubra habilidades, cursos e experiência em HTML, CSS e JavaScript."
+    />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
   <body>
+    <!-- HEADER -->
     <header class="site-header">
       <div class="container header-inner">
         <a href="index.html" class="brand">
           <img
             src="./img/Diseño sin título (1).png"
-            alt="Logo Yurisay"
+            alt="Logo Yurisay Martinez"
             class="logo"
           />
         </a>
@@ -28,6 +33,7 @@
           aria-expanded="false"
           id="navToggle"
         >
+          <span class="sr-only">Abrir menu</span>
           <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
             <path
               d="M3 6h18M3 12h18M3 18h18"
@@ -38,7 +44,7 @@
           </svg>
         </button>
 
-        <nav id="primary-navigation" class="primary-nav">
+        <nav id="primary-navigation" class="primary-nav" role="navigation">
           <ul class="nav-list">
             <li><a href="index.html" class="nav-link">Home</a></li>
             <li>
@@ -54,7 +60,6 @@
     </header>
 
     <main>
-      <!-- SOBRE MIM -->
       <section class="about-section container">
         <div class="about-grid">
           <div class="about-photo">
@@ -64,28 +69,23 @@
               class="about-img"
             />
           </div>
-
           <div class="about-content">
             <h1 class="section-title">Sobre mim</h1>
-
             <p>
-              Olá! Meu nome é <strong>Yurisay Martinez</strong>, sou uma
+              Olá! Meu nome é <strong>Yurisay Martinez</strong>, sou
               desenvolvedora Front-End em formação, apaixonada por criar
               interfaces intuitivas, modernas e responsivas.
             </p>
-
             <p>
               Estou constantemente estudando HTML, CSS e JavaScript, além de
               explorar UX/UI Design, acessibilidade e boas práticas para criação
               de produtos digitais.
             </p>
-
             <p>
               Meu objetivo é evoluir como profissional, construindo soluções
               funcionais que facilitem a vida das pessoas e oferecendo
               experiências agradáveis para todos os usuários.
             </p>
-
             <a href="projeto-portafolio.html" class="btn btn-primary"
               >Ver meus projetos</a
             >
@@ -93,30 +93,25 @@
         </div>
       </section>
 
-      <!-- SKILLS -->
       <section class="skills-section">
         <div class="container">
           <h2 class="section-title">Habilidades</h2>
-
           <div class="skills-grid">
             <div class="skill-card">
               <img src="./img/icon-html.png" alt="HTML logo" />
               <h3>HTML5</h3>
               <p>Estruturação semântica, acessibilidade e boas práticas.</p>
             </div>
-
             <div class="skill-card">
               <img src="./img/icon-css.png" alt="CSS logo" />
               <h3>CSS3</h3>
               <p>Responsividade, Flexbox, Grid e design moderno.</p>
             </div>
-
             <div class="skill-card">
               <img src="./img/icon-js.png" alt="JavaScript logo" />
               <h3>JavaScript</h3>
               <p>Lógica de programação, DOM e interatividade.</p>
             </div>
-
             <div class="skill-card">
               <img src="./img/figma.png" alt="Figma logo" />
               <h3>Figma</h3>
@@ -126,11 +121,9 @@
         </div>
       </section>
 
-      <!-- FORMAÇÃO / CURSOS -->
       <section class="courses-section">
         <div class="container">
           <h2 class="section-title">Formação e cursos</h2>
-
           <ul class="courses-list">
             <li><strong>HTML5 & CSS3</strong> — Curso em Vídeo</li>
             <li><strong>JavaScript</strong> — Curso em Vídeo</li>
@@ -147,16 +140,23 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <p>&copy; <span id="year"></span> Yurisay Martinez</p>
-        <nav>
-          <a href="https://github.com/yurisaym" target="_blank">GitHub</a>
+        <nav aria-label="Redes sociais">
+          <a
+            href="https://github.com/yurisaym"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
           <a
             href="https://www.linkedin.com/in/yurisay-m-45aa41215/"
             target="_blank"
+            rel="noopener noreferrer"
             >LinkedIn</a
           >
         </nav>
       </div>
     </footer>
-    <script src="/index.js"></script>
+
+    <script src="./index.js"></script>
   </body>
 </html>

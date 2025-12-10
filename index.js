@@ -1,11 +1,13 @@
 const navToggle = document.getElementById('navToggle')
-const nav = document.getElementById('primary-navigation')
+const navList = document.querySelector('.nav-list')
 
-if (navToggle && nav) {
+if (navToggle && navList) {
   navToggle.addEventListener('click', () => {
+    navList.classList.toggle('open')
+
+    // Actualizar aria-expanded para accesibilidad
     const expanded = navToggle.getAttribute('aria-expanded') === 'true'
     navToggle.setAttribute('aria-expanded', !expanded)
-    nav.classList.toggle('open')
   })
 }
 
